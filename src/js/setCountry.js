@@ -4,18 +4,14 @@ export default function getCountry(data) {
       .map(
         elem =>
           `<li>
-        <svg width="70" height="40">
-        <use href="${elem.flags.svg}"></use>
-    </svg>
+        <img src="${elem.flags.svg}" width='70'>
     <p><b>${elem.name.official}</b></p>
   </li>`
       )
       .join('');
   } else if (data.length === 1) {
     return `<div class='cont__flex'>
-            <svg width="70" height="40">
-              <use href="${data[0].flags.svg}"></use>
-            </svg>
+            <img src="${data[0].flags.svg}" width='70' height='40'>
             <p><b>${data[0].name.official}</b></p></div>
             <p><b>Capital:</b> ${data[0].capital}</p>
             <p><b>Population:</b> ${data[0].population}</p>
