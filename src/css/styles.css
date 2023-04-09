@@ -18,3 +18,13 @@ body {
   max-width: 320px;
   margin-bottom: 16px;
 }
+
+li {
+  display: flex;
+  list-style: none;
+}
+
+.cont__flex {
+  display: flex;
+  font-size: 30px;
+}
